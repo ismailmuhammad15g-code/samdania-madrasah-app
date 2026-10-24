@@ -1,3 +1,15 @@
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Android and Gradle
 *.iml
 .gradle
 .kotlin
@@ -8,11 +20,37 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
-.DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
-local.properties
-.env
 debug.keystore
+
+# Environment and secrets
+.env
+.env*
+!.env.example
+
+# Next.js and production builds
+/.next/
+/out/
+/build
+/vercel
+
+# Testing
+/coverage
+
+# Miscellaneous
+.DS_Store
+*.pem
+local.properties
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
